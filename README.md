@@ -1,4 +1,6 @@
 CS_and_iOS_Study
 
-[20190923](https://github.com/hyejuuu/CS_and_iOS_Study/blob/master/20190923.md) (객체지향프로그래밍 / 가비지 컬렉터, ARC 비교) <br>
-[20190925](https://github.com/hyejuuu/CS_and_iOS_Study/blob/master/20190925.md) (CGRect / Frame, Bounds / Struct, Class)
+[객체지향프로그래밍 / Struct, Class](https://github.com/hyejuuu/CS_and_iOS_Study/blob/master/20190923.md) <br>
+[Frame, Bounds](https://github.com/hyejuuu/CS_and_iOS_Study/blob/master/20190925.md) <br>
+[Reference Counting](https://github.com/hyejuuu/CS_and_iOS_Study/blob/master/20191004.md) <br>
+
