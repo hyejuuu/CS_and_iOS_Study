@@ -105,9 +105,32 @@ CPU를 한 프로세스에서 다른 프로세스로 넘겨주는 과정을 말�
   - 프로세스는 통째로 디스크로 **swap out**된다.
   - suspended된 프로세스는 외부에서 정지시킨 상태이기 때문에 외부에서 resume해주어야 다시 active될 수 있다.
 
+<img width="750" alt="프로세스상태도2" src="https://user-images.githubusercontent.com/34293225/67924814-e68b6d80-fbf4-11e9-9b88-9debefa9d714.png">
+
+<br>
 
 
 
+####Thread 
+
+프로세스 내부에 CPU 수행단위를 여러 흐름으로 나누어 놓은 것
+
+Thread는 programe counter, register set, stack space만을 독립적으로 가지고 프로세스의 code, data, OS 자원을 함께 공유한다.
+
+<br>
+
+![PCB](https://user-images.githubusercontent.com/34293225/68016504-18c1cb80-fcd8-11e9-92ab-5cc019847042.png)
 
 
 
+#### Thread의 장점
+
+- 응답성
+  - Ex) 웹브라우저가 멀티쓰레드 환경을 가진다면 하나의 쓰레드가 network을 요청중으로 Blocked 상태일 때 다른 쓰레드가 display 같은 작업을 멈추지 않고 계속 할 수 있다 -> 비동기식 I/O
+- 자원 공유
+  - 여러개의 쓰레드가 프로세스의 code, data, 자원을 공유하기 때문에 프로세스를 새로 생성할 때보다 메모리를 절약할 수 있다.
+- 경제적
+  - 프로세스를 하나 생성하는데에는 많은 오버헤드가 발생한다. 하지만 프로세스 안에 쓰레드를 추가하는 것은 code, data, 자원 외의 것만 추가하면 되기 때문에 오버헤드가 그에 비해서 매우 적다.
+  - 문맥교환도 마찬가지로 쓰레드는 동일한 주소 공간을 사용하기 때문에 program counter와 register 정보만 교환하면 되기 때문에 오버헤드가 적다.
+- Multi-process 의 활용 (CPU가 여러개 있는 환경에서 얻을 수 있는 장점)
+  - Thread가 각각 다른 CPU에서 병렬적으로 일 처리가 가능해 CPU가 하나 존재하는 컴퓨터보다 더 결과를 빠르게 얻을 수 있다.
