@@ -18,7 +18,7 @@
 
 <br>
 
-#### CPU Scheduling 성능 척도
+### CPU Scheduling 성능 척도
 
 - 시스템 입장에서의 성능 척도
 
@@ -41,26 +41,20 @@
 
 <br>
 
-#### CPU Scheduling Algorithm
+### CPU Scheduling Algorithm
 
-- FCFS (First-Come First-Served) : 먼저 온 프로세스 순서대로 처리
+ #### FCFS (First-Come First-Served) : 먼저 온 프로세스 순서대로 처리
 
-  Ex) 	Process		Burst Time
+    Ex)  P1 -> P2 -> P3의 순서로 프로세스가 들어오고 각각 24, 3, 3의 Burst Time을 갖는다고 하자
 
-  ​				P1					24
+    대기 시간 : P1 = 0, P2 = 24, P3 = 27 / 평균 대기 시간 : 17
 
-  ​				P2					3
+    만약 P2 -> P3 -> P1 순서로 들어오면
 
-  ​				P3					3
-
-  대기 시간 : P1 = 0, P2 = 24, P3 = 27 / 평균 대기 시간 : 17
-
-  만약 P2 -> P3 -> P1 순서로 들어오면
-
-  대기 시간 : P2 = 0, P3 = 3, P1 = 6 / 평균 대기 시간 : 3 으로 대기시간이 매우 줄어들게 된다.
+    대기 시간 : P2 = 0, P3 = 3, P1 = 6 / 평균 대기 시간 : 3 으로 대기시간이 매우 줄어들게 된다.
 
   - Convoy effect : 위와 같이 긴 Burst Time을 갖는 프로세스가 하나 도착해서 짧은 Burst Time를 갖는 프로세스들이 지나치게 오래 기다려야하는 현상
 
 <br>
 
-- SJF (Shortest-Job-First) : FCFS의 Convoy effect를 해결하기 위해서 CPU Burst Time이 가장 짧은 프로세스를 제일 먼저 처리
+ #### SJF (Shortest-Job-First) : FCFS의 Convoy effect를 해결하기 위해서 CPU Burst Time이 가장 짧은 프로세스를 제일 먼저 처리
