@@ -1,11 +1,11 @@
-#### 운영체제의 목적
+### 운영체제의 목적
 
 - 자원을 효율적으로 관리하기 위함
 - 사용자에게 컴퓨터를 편리하게 사용할 수 있는 환경을 제공하기 위함
 
 
 
-#### 운영체제의 분류
+### 운영체제의 분류
 
 - 동시 작업 가능 여부
   - Single Tasking : 한번에 하나의 작업만 처리함 (ex: DOS)
@@ -35,7 +35,7 @@
 
 <br>
 
-#### 운영체제의 구조
+### 운영체제의 구조
 
 <img width="994" alt="운영체제구조" src="https://user-images.githubusercontent.com/34293225/67615803-a5b5e200-f80b-11e9-9c91-d53ed0690705.png">
 
@@ -49,6 +49,7 @@
 - Device Controller : I/O Device를 관리하는 일종의 작은 CPU -> hardware
 - Device Driver : OS 코드에 포함되어있는 각 장치별 처리 루틴 -> software
 <br>
+
 - DMA(direct memory access) Controller : 너무 자주 interrupt가 발생하면 CPU가 매번 처리하던 일을 멈추고 device buffer에 저장된 것을 memory에 옮겨 저장해야하는 데 이러한 overhead가 너무 커서 DMA Controller가 interrupt가 발생하면 device buffer에 있는 것을 memory에 접근해 저장하는 역할을 CPU 대신해줌
   - interrupt를 모두 처리하면 CPU에게 처리함을 알린다
   <br>
@@ -71,14 +72,14 @@
 
 <br>
 
-#### 프로그램의 실행 (메모리 load)
+### 프로그램의 실행 (메모리 load)
 
 ![프로그램의 실행](https://user-images.githubusercontent.com/34293225/67674370-a8f1cf00-f9bf-11e9-9877-cf1004d78c2e.png)
 
 
 <br>
 
-#### 커널 주소 공간의 내용
+### 커널 주소 공간의 내용
 
 ![커널 주소 공간의 내용](https://user-images.githubusercontent.com/34293225/67691372-d0f22a00-f9e1-11e9-8dc4-f489909129c8.png)
 
