@@ -1,10 +1,10 @@
-#### 프로세스의 개념
+### 프로세스의 개념
 
 프로세스는 실행중인 프로그램을 말합니다:)
 
 <br>
 
-#### 프로세스의 상태
+### 프로세스의 상태
 
 - Running : CPU를 잡고 instruction을 수행중인 상태
 - Ready : CPU를 기다리는 상태
@@ -25,31 +25,31 @@
 
 
 
-#### PCB(Process Control Block)
+### PCB(Process Control Block)
 
 각 프로세스를 관리하기 위해서 OS의 Data영역에 프로세스 정보들을 저장해놓은 것
 
-저장되어있는 정보들
+#### 저장되어있는 정보들
 
 1. OS가 관리 상 사용하는 정보
 
-   Process State (running, ready, blocked)
+   - Process State (running, ready, blocked)
 
-   Process ID
+   - Process ID
 
-   Scheduling information
+   - Scheduling information
 
-   Priority
+   - Priority
 
 2. CPU 수행 관련 하드웨어 값 -> 프로세스의 문맥(context)을 표시하기 위한 정보들
 
-   Program counter
+   - Program counter
 
-   Registers
+   - Registers
 
 3. 메모리 관련
 
-   Code, Data, Stack의 위치 정보
+   - Code, Data, Stack의 위치 정보
 
 4. 파일 관련 정보
 
@@ -59,7 +59,7 @@
 
 
 
-#### 문맥교환(Context Switch)
+### 문맥교환(Context Switch)
 
 CPU를 한 프로세스에서 다른 프로세스로 넘겨주는 과정을 말한다.
 
@@ -77,7 +77,7 @@ CPU를 한 프로세스에서 다른 프로세스로 넘겨주는 과정을 말�
 
 
 
-####스케줄러
+### 스케줄러
 
 - Long-term scheduler(장기 스케줄러 or job scheduler)
   - 메모리를 어떤 프로세스에게 먼저 줄지 결정한다. 즉 어떤 프로세스를 new에서 ready(memory에 올라간 상태)로 바꾸어줄것인가를 결정한다.
@@ -95,7 +95,7 @@ CPU를 한 프로세스에서 다른 프로세스로 넘겨주는 과정을 말�
 
 
 
-#### 프로세스의 상태 (swapper가 있는 경우)
+### 프로세스의 상태 (swapper가 있는 경우)
 
 - Running
 - Ready
@@ -111,7 +111,7 @@ CPU를 한 프로세스에서 다른 프로세스로 넘겨주는 과정을 말�
 
 
 
-####Thread 
+### Thread 
 
 프로세스 내부에 CPU 수행단위를 여러 흐름으로 나누어 놓은 것
 
