@@ -18,7 +18,7 @@
 
 <br>
 
-### CPU Scheduling 성능 척도
+## CPU Scheduling 성능 척도
 
 - 시스템 입장에서의 성능 척도
 
@@ -42,9 +42,9 @@
 
 <br>
 
-### CPU Scheduling Algorithm
+## CPU Scheduling Algorithm
 
- #### FCFS (First-Come First-Served) : 먼저 온 프로세스 순서대로 처리
+ ### FCFS (First-Come First-Served) : 먼저 온 프로세스 순서대로 처리
 
     Ex)  P1 -> P2 -> P3의 순서로 프로세스가 들어오고 각각 24, 3, 3의 Burst Time을 갖는다고 하자
     
@@ -58,7 +58,7 @@
 
 <br>
 
- #### SJF (Shortest-Job-First) : FCFS의 Convoy effect를 해결하기 위해서 CPU Burst Time이 가장 짧은 프로세스를 제일 먼저 처리
+ ### SJF (Shortest-Job-First) : FCFS의 Convoy effect를 해결하기 위해서 CPU Burst Time이 가장 짧은 프로세스를 제일 먼저 처리
 
 SJF는 preemptive인 경우 minimum average waiting time을 보장한다. 
 
@@ -69,14 +69,14 @@ SJF는 preemptive인 경우 minimum average waiting time을 보장한다.
 
 
 
-SJF의 문제점
+**SJF의 문제점**
 
 - CPU Burst time이 긴 프로세스는 평생 CPU를 사용할 수 없기 때문에 starvation이 발생할 수 있다. 
 - CPU Burst time을 미리 알 수 없기 때문에 실질적으로 SJF를 사용하기엔 무리가 있다. 과거의 CPU Burst time을 보고 추정할 수는 있다.
 
 <br>
 
-#### Priority Scheduling : 우선 순위가 높은 프로세스 먼저 처리
+### Priority Scheduling : 우선 순위가 높은 프로세스 먼저 처리
 
 priority number는 정수로 표현되며 낮을수록 priority가 높다.
 
@@ -86,7 +86,7 @@ CPU Burst time을 priority로 놓으면 SJF --> 즉, SJF도 일종의 Priority S
 
 <br>
 
-#### Round Robin (RR)
+### Round Robin (RR)
 
 각 프로세스는 동일한 할당시간(time quantum)을 갖고 할당시간이 지나면 프로세스는 CPU를 빼앗긴다. 사용하던 프로세스는 ready queue의 제일 뒤로 가서 줄을 선다.
 
@@ -100,7 +100,7 @@ CPU Burst time을 priority로 놓으면 SJF --> 즉, SJF도 일종의 Priority S
 
 <br>
 
-#### Multilevel queue
+### Multilevel queue
 
 - Ready queue를 여러개로 분할
 
@@ -142,33 +142,35 @@ CPU Burst time을 priority로 놓으면 SJF --> 즉, SJF도 일종의 Priority S
 
 <br>
 
-#### Multilevel Feedback Queue
+### Multilevel Feedback Queue
 
 Multilevel Queue와 동일하게 여러 queue가 존재하지만 프로세스가 queue간 이동이 가능하다.
 
 aging기법을 Multilevel Feedback Queue의 방식으로 구현할 수 있다.
 
-ex) Q0 - time quantum 8 milliseconds
+ex)
 
-​	  Q1 - time quantum 16 milliseconds
+Q0 - time quantum 8 milliseconds
 
-​	  Q2 - FCFS
+Q1 - time quantum 16 milliseconds
 
-​	  new job은 우선순위가 가장 높은 Q0으로 들어간다. 
+Q2 - FCFS
 
-​	  CPU를 잡아서 8 milliseconds동안 완료하지 못한다면 Q1에 줄을 서서 기다린다.
+new job은 우선순위가 가장 높은 Q0으로 들어간다. 
 
-​	  CPU를 다시 잡아 16 milliseconds동안 작업을 완료하지 못하면 Q2에 줄을 서서 기다려서 수행되게 된다.
+CPU를 잡아서 8 milliseconds동안 완료하지 못한다면 Q1에 줄을 서서 기다린다.
+
+CPU를 다시 잡아 16 milliseconds동안 작업을 완료하지 못하면 Q2에 줄을 서서 기다려서 수행되게 된다.
 
 <br>
 
-### Real-time Scheduling
+## Real-time Scheduling
 
 real-time system에서의 Scheduling은 deadline이 존재하며 빨리 처리하는 것이 중요한게 아니고 deadline을 만족시키는 것이 중요하다.
 
 <br>
 
-### Thread Scheduling
+## Thread Scheduling
 
 - Local Scheduling --> 운영체제가 스케줄하는 게 아님
   - User level thread는 운영체제는 쓰레드의 존재를 모르고 사용자 프로세스 본인이 내부에 쓰레드를 여러개 둔 경우이기 때문에 사용자 프로세스 본인이 thread library에 의해 어떤 thread를 스케줄할 지 결정한다.
