@@ -11,3 +11,4 @@ kocw의 이화여자대학교 운영체제 강의를 듣고 복습하면서 정�
 [Process](https://github.com/hyejuuu/CS_and_iOS_Study/blob/master/OS_Process.md) <br>
 [Process Management](https://github.com/hyejuuu/CS_and_iOS_Study/blob/master/OS_ProcessManagement.md) <br>
 [CPU Scheduling](https://github.com/hyejuuu/CS_and_iOS_Study/blob/master/OS_CPUScheduling.md) <br>
+[Process Synchronization](https://github.com/hyejuuu/CS_and_iOS_Study/blob/master/OS_ProcessSynchronization.md) <br>
