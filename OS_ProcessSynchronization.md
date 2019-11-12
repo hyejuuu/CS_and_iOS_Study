@@ -16,7 +16,7 @@ count를 Execution 1에서 1을 더하고 결과를 Storage에 저장한다. 그
 
 하지만 Execution 1에서 count값을 가져가고 결과를 Storage에 저장하지 않은 상태에서 Execution 2에서 count값을 가져간다. 이 후 Execution 1이 결과값을 Storage에 저장하고 Execution 2에서 연산 결과값을 Storage에 저장한다. 이러면 count가 의도했던 것과 다르게 1을 뺀 값만이 반영된다.
 
-즉 하나의 고유데이터를 여럿이 동시에 접근하려고 할 때 생기는 위와 같은 문제를 Race Condition(경쟁 상태)이라고 한다.
+즉 하나의 고유데이터를 여럿이 동시에 접근하려고 할 때 생기는 위와 같은 문제를 **Race Condition(경쟁 상태)**이라고 한다.
 
 <br>
 
