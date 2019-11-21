@@ -87,7 +87,7 @@ critical section 앞 뒤로 어떤 코드를 추가해야 이 문제를 해결�
 
      starvation을 막고자하는 것으로 프로세스가 critical section에 들어가려고 요청하면 그 요청이 허용될 때까지의 시간은 유한해야한다.
 
-
+<br>
 
 - Algorithm1 : 나의 turn을 확인하는 turn 사용
 
@@ -99,6 +99,8 @@ critical section 앞 뒤로 어떤 코드를 추가해야 이 문제를 해결�
 
   
 
+<br>
+
 - Algorithm2 : 프로세스마다 flag를 사용
 
   <img width="844" alt="스크린샷 2019-11-21 오후 3 01 50" src="https://user-images.githubusercontent.com/34293225/69311538-de60a400-0c6f-11ea-9f77-69a0067c7208.png">
@@ -108,6 +110,7 @@ critical section 앞 뒤로 어떤 코드를 추가해야 이 문제를 해결�
   --> 만약 Pi가 flag[i] = true를 실행하고 Pj에게 CPU를 빼앗기면 Pi와 Pj의 flag가 모두 true가 되기 때문에 아무도 critical section에 들어가지 못하고 기다리는 경우가 발생한다.
 
 
+<br>
 
 - Algorithm3 (Peterson's Algorithm) : turn과 flag를 모두 사용
 
