@@ -59,11 +59,55 @@ count를 Execution 1에서 1을 더하고 결과를 Storage에 저장한다. 그
 
 Critical section이란 각 프로세스가 공유 데이터에 접근하는 코드 부분을 말한다.
 
-X = X -1 과 같은 코드는 기계어로 바꿨을 때 여러 단계로 나누어지는데 이러한 명령을 실행하는 도중에 (데이터를 가져오는 명령만 실행했을 때) CPU가 같은 공유 데이터를 사용하는 프로세스에게 넘어가게 되면 문제가 발생할 수 있다.
+<img width="635" alt="스크린샷 2019-11-21 오후 2 41 31" src="https://user-images.githubusercontent.com/34293225/69307128-12869580-0c6d-11ea-82f2-8b3f1cf43eaf.png">
+
+X = X -1 과 같은 코드는 위와 같이 기계어로 바꿨을 때 여러 단계로 나누어지는데 이러한 명령을 실행하는 도중에 (데이터를 가져오는 명령만 실행했을 때) CPU가 같은 공유 데이터를 사용하는 프로세스에게 넘어가게 되면 문제가 발생할 수 있다.
 
 
 
 #### 해결법
 
 - 프로세스의 일반적인 구조
+
+<img width="849" alt="스크린샷 2019-11-21 오후 2 41 38" src="https://user-images.githubusercontent.com/34293225/69307129-14505900-0c6d-11ea-8b05-ed2cd4808147.png">
+
+critical section 앞 뒤로 어떤 코드를 추가해야 이 문제를 해결할 수 있을까?
+
+- critical section 문제 해결법의 조건
+
+  1. Mutual exclusion (상호 배제)
+
+     프로세스 Pi가 critical section 부분을 수행중이면 다른 모든 프로세스들은 해당 critical section에 들어가면 안된다.
+
+  2. Progress (진행)
+
+     아무도 critical section을 수행중이지 않으면 critical section에 들어가고자 하는 프로세스가 들어갈 수 있어야한다.
+
+  3. Bounded waiting (유한 대기)
+
+     starvation을 막고자하는 것으로 프로세스가 critical section에 들어가려고 요청하면 그 요청이 허용될 때까지의 시간은 유한해야한다.
+
+
+
+- Algorithm1 : 나의 turn을 확인하는 turn 사용
+
+  <img width="844" alt="스크린샷 2019-11-21 오후 2 48 31" src="https://user-images.githubusercontent.com/34293225/69307453-064f0800-0c6e-11ea-9dbd-5dc5124a8baa.png">
+
+  문제점
+
+  --> 과잉양보 : 반드시 critical section에 한번씩 교대로 들어가야한다. 상대 프로세스가 critical section에 들어갔다가 나오면서 turn 값을 내 값으로 바꿔줘야만 내가 들어갈 수 있다. 만약 내가 critical section에 들어가야하는데 상대 프로세스가 critical section에 평생 들어가지 않는다면 나도 critical section에 평생 들어갈 수 없음
+
+  
+
+- Algorithm2 : 프로세스마다 flag를 사용
+
+  <img width="844" alt="스크린샷 2019-11-21 오후 3 01 50" src="https://user-images.githubusercontent.com/34293225/69311538-de60a400-0c6f-11ea-9f77-69a0067c7208.png">
+
+  문제점
+
+  --> 만약 Pi가 flag[i] = true를 실행하고 Pj에게 CPU를 빼앗기면 Pi와 Pj의 flag가 모두 true가 되기 때문에 아무도 critical section에 들어가지 못하고 기다리는 경우가 발생한다.
+
+
+
+- Algorithm3 (Peterson's Algorithm) : turn과 flag를 모두 사용
 
