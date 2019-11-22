@@ -50,7 +50,7 @@
 - Device Driver : OS 코드에 포함되어있는 각 장치별 처리 루틴 -> software
 <br>
 
-- DMA(direct memory access) Controller : 너무 자주 interrupt가 발생하면 CPU가 매번 처리하던 일을 멈추고 device buffer에 저장된 것을 memory에 옮겨 저장해야하는 데 이러한 overhead가 너무 커서 DMA Controller가 interrupt가 발생하면 device buffer에 있는 것을 memory에 접근해 저장하는 역할을 CPU 대신해줌
+- DMA(direct memory access) Controller : 너무 자주 interrupt가 발생하면 CPU가 매번 처리하던 일을 멈추고 device buffer에 저장된 것을 memory에 옮겨 저장해야하는 데 이러한 overhead가 너무 크기때문에 DMA Controller가 CPU 대신 interrupt가 발생하면 device buffer에 있는 것을 memory에 저장하는 역할을 함
   - interrupt를 모두 처리하면 CPU에게 처리함을 알린다
   <br>
 - 시스템콜 : 사용자 프로그램이 운영체제의 커널함수를 호출하는 것으로 자신이 직접 interrupt를 발생시키 것.
