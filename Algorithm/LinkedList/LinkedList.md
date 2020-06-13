@@ -4,9 +4,9 @@
 
 리스트는 노드(Node)의 선형 연결로 이루어져 있으며, 노드는 데이터와 SinglyLinkedList에는 다음 노드를 가리키는 포인터(next)를, DoublyLiskedList는 다음 노드와 전 노드를 가리키는 포인터(prev, next)를 갖습니다.
 
-또한 리스트의 시작 노드를 head라고 하며 마지막 노드는 tail이라고 합니다. 다음 노드가 없는 tail의 next값은 NULL로 설정합니다.
+또한 리스트의 시작 노드를 head라고 하며 마지막 노드는 tail이라고 합니다. 다음 노드가 없는 tail의 next값은 NULL로 설정합니다.  
 
-
+  <br/>
 
 - SinglyLinkedList
 <img width="531" alt="스크린샷 2020-06-13 오후 7 02 35" src="https://user-images.githubusercontent.com/34293225/84568237-f12bf900-adb8-11ea-8465-54da29f61640.png">
@@ -16,7 +16,7 @@
 <img width="643" alt="스크린샷 2020-06-13 오후 9 07 03" src="https://user-images.githubusercontent.com/34293225/84568353-d908a980-adb9-11ea-9d12-18fe573ad615.png">
 
 
-
+<br/>
 
 우선 SinglyLinkedList에 대해서 설명하도록 하겠습니다 :) 
 
@@ -46,8 +46,11 @@ struct LinkedList<T> {
 ```
 
 
+<br/><br/>
 
 리스트에서 삽입과 삭제를 위한 메소드들은 아래와 같습니다.
+
+<br/>
 
 맨앞에 데이터를 추가하기 위한 addFirst(data:) 메소드입니다.
 
@@ -69,6 +72,7 @@ mutating func addFirst(data: T) {
 
 
 
+<br/><br/>
 
 원하는 위치에 데이터를 추가하기 위한 insert(at:data:) 메소드입니다.
 
@@ -97,6 +101,7 @@ mutating func insert(at index: Int, data: T) {
 
 
 
+<br/><br/>
 
 
 마지막에 데이터를 추가하기 위한 append(data:) 메소드입니다.
@@ -116,6 +121,7 @@ mutating func append(data: T) {
 ```
 
 
+<br/><br/>
 
 
 
@@ -131,6 +137,7 @@ mutating func removeFirst() {
 
 
 
+<br/><br/>
 
 
 원하는 위치의 데이터를 삭제하기 위한 remove(at:) 메소드 입니다.
@@ -159,6 +166,7 @@ mutating func remove(at index: Int) {
 
 
 
+<br/><br/>
 
 
 마지막 데이터를 삭제하기 위한 removeLast() 메소드 입니다.
@@ -184,6 +192,7 @@ mutating func removeLast() {
 }
 ```
 
+<br/><br/>
 
 
 - DoublyLinkedList
@@ -203,9 +212,12 @@ class Node<T> {
 }
 ```
 
+<br/><br/>
 
 
 DoublyLinkedList의 삽입과 삭제를 위한 메소드들은 아래와 같습니다.
+
+<br/>
 
 맨앞에 데이터를 추가하기 위한 addFirst(data:) 메소드입니다.
 
@@ -226,6 +238,7 @@ mutating func addFirst(data: T) {
 
 
 
+<br/><br/>
 
 
 원하는 위치에 데이터를 추가하기 위한 insert(at:data:) 메소드입니다.
@@ -256,7 +269,7 @@ mutating func insert(at index: Int, data: T) {
 ```
 
 
-
+<br/><br/>
 
 
 마지막 위치에 데이터를 추가하기 위한 append(data:) 메소드입니다.
@@ -279,7 +292,7 @@ mutating func append(data: T) {
 
 
 
-
+<br/><br/>
 
 맨앞의 데이터를 삭제하기 위한 removeFirst() 메소드입니다.
 
@@ -298,7 +311,7 @@ mutating func removeFirst() {
 ```
 
 
-
+<br/><br/>
 
 
 원하는 위치의 데이터를 삭제하기 위한 remove(at:) 메소드입니다.
@@ -326,7 +339,7 @@ mutating func remove(at index: Int) {
 
 
 
-
+<br/><br/>
 
 마지막 위치의 데이터를 삭제하기 위한 removeLast() 메소드입니다.
 
