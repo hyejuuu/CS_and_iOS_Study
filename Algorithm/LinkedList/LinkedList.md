@@ -9,12 +9,12 @@
 
 
 - SinglyLinkedList
+<img width="531" alt="스크린샷 2020-06-13 오후 7 02 35" src="https://user-images.githubusercontent.com/34293225/84568237-f12bf900-adb8-11ea-8465-54da29f61640.png">
 
-![스크린샷 2020-06-13 오후 7.02.35](/Users/hyeju/Desktop/스크린샷 2020-06-13 오후 7.02.35.png)
 
 - DoublyLinkedList
+<img width="643" alt="스크린샷 2020-06-13 오후 9 07 03" src="https://user-images.githubusercontent.com/34293225/84568353-d908a980-adb9-11ea-9d12-18fe573ad615.png">
 
-![스크린샷 2020-06-13 오후 7.40.54](/Users/hyeju/Library/Application Support/typora-user-images/스크린샷 2020-06-13 오후 7.40.54.png)
 
 
 
@@ -51,7 +51,8 @@ struct LinkedList<T> {
 
 맨앞에 데이터를 추가하기 위한 addFirst(data:) 메소드입니다.
 
-![스크린샷 2020-06-13 오후 7.17.56](/Users/hyeju/Desktop/스크린샷 2020-06-13 오후 7.17.56.png)
+<img width="719" alt="스크린샷 2020-06-13 오후 7 17 56" src="https://user-images.githubusercontent.com/34293225/84568267-220c2e00-adb9-11ea-960e-b8be2bb418d9.png">
+
 
 ```swift
 mutating func addFirst(data: T) {
@@ -71,7 +72,8 @@ mutating func addFirst(data: T) {
 
 원하는 위치에 데이터를 추가하기 위한 insert(at:data:) 메소드입니다.
 
-![스크린샷 2020-06-13 오후 7.28.09](/Users/hyeju/Desktop/스크린샷 2020-06-13 오후 7.28.09.png)
+<img width="415" alt="스크린샷 2020-06-13 오후 7 28 09" src="https://user-images.githubusercontent.com/34293225/84568280-2fc1b380-adb9-11ea-88f7-849d2ab7795b.png">
+
 
 ```swift
 mutating func insert(at index: Int, data: T) {
@@ -98,8 +100,7 @@ mutating func insert(at index: Int, data: T) {
 
 
 마지막에 데이터를 추가하기 위한 append(data:) 메소드입니다.
-
-![스크린샷 2020-06-13 오후 7.31.34](/Users/hyeju/Desktop/스크린샷 2020-06-13 오후 7.31.34.png)
+<img width="591" alt="스크린샷 2020-06-13 오후 7 31 34" src="https://user-images.githubusercontent.com/34293225/84568288-4831ce00-adb9-11ea-98a6-787b679a41e7.png">
 
 ```swift
 mutating func append(data: T) {
@@ -118,7 +119,9 @@ mutating func append(data: T) {
 
 
 
-맨앞에 데이터를 삭제하기 위한 removeFirst() 메소드 입니다.![스크린샷 2020-06-13 오후 7.49.56](/Users/hyeju/Library/Application Support/typora-user-images/스크린샷 2020-06-13 오후 7.49.56.png)
+맨앞에 데이터를 삭제하기 위한 removeFirst() 메소드 입니다.
+
+<img width="643" alt="스크린샷 2020-06-13 오후 9 11 10" src="https://user-images.githubusercontent.com/34293225/84568434-706dfc80-adba-11ea-9f3d-6c608d6222ae.png">
 
 ```swift
 mutating func removeFirst() {
@@ -132,7 +135,7 @@ mutating func removeFirst() {
 
 원하는 위치의 데이터를 삭제하기 위한 remove(at:) 메소드 입니다.
 
-![스크린샷 2020-06-13 오후 8.02.17](/Users/hyeju/Library/Application Support/typora-user-images/스크린샷 2020-06-13 오후 8.02.17.png)
+<img width="643" alt="스크린샷 2020-06-13 오후 9 11 02" src="https://user-images.githubusercontent.com/34293225/84568431-6e0ba280-adba-11ea-8daa-d29c7eb4d161.png">
 
 ```swift
 mutating func remove(at index: Int) {
@@ -160,7 +163,7 @@ mutating func remove(at index: Int) {
 
 마지막 데이터를 삭제하기 위한 removeLast() 메소드 입니다.
 
-![스크린샷 2020-06-13 오후 8.06.48](/Users/hyeju/Library/Application Support/typora-user-images/스크린샷 2020-06-13 오후 8.06.48.png)
+<img width="643" alt="스크린샷 2020-06-13 오후 9 10 57" src="https://user-images.githubusercontent.com/34293225/84568430-6d730c00-adba-11ea-97b5-85d23f8cb3e1.png">
 
 ```swift
 mutating func removeLast() {
@@ -183,6 +186,7 @@ mutating func removeLast() {
 
 
 
+- DoublyLinkedList
 SinglyLinkedList의 노드는 다음 노드만 가리키는 형태로 되어있지만 DoublyLinkedList의 노드는 이전 노드를 가리키는 prev를 포함합니다.
 
 ```swift
@@ -205,7 +209,7 @@ DoublyLinkedList의 삽입과 삭제를 위한 메소드들은 아래와 같습�
 
 맨앞에 데이터를 추가하기 위한 addFirst(data:) 메소드입니다.
 
-![스크린샷 2020-06-13 오후 8.36.03](/Users/hyeju/Library/Application Support/typora-user-images/스크린샷 2020-06-13 오후 8.36.03.png)
+<img width="643" alt="스크린샷 2020-06-13 오후 9 06 24" src="https://user-images.githubusercontent.com/34293225/84568393-2d138e00-adba-11ea-9521-9b9146a0e4ff.png">
 
 ```swift
 mutating func addFirst(data: T) {
@@ -226,7 +230,7 @@ mutating func addFirst(data: T) {
 
 원하는 위치에 데이터를 추가하기 위한 insert(at:data:) 메소드입니다.
 
-![스크린샷 2020-06-13 오후 8.45.10](/Users/hyeju/Library/Application Support/typora-user-images/스크린샷 2020-06-13 오후 8.45.10.png)
+<img width="643" alt="스크린샷 2020-06-13 오후 9 06 16" src="https://user-images.githubusercontent.com/34293225/84568391-2be26100-adba-11ea-8ebd-b8cecdd556c0.png">
 
 ```swift
 mutating func insert(at index: Int, data: T) {
@@ -257,7 +261,7 @@ mutating func insert(at index: Int, data: T) {
 
 마지막 위치에 데이터를 추가하기 위한 append(data:) 메소드입니다.
 
-![스크린샷 2020-06-13 오후 8.48.58](/Users/hyeju/Library/Application Support/typora-user-images/스크린샷 2020-06-13 오후 8.48.58.png)
+<img width="643" alt="스크린샷 2020-06-13 오후 9 06 08" src="https://user-images.githubusercontent.com/34293225/84568389-2ab13400-adba-11ea-9016-6853be4dcd6f.png">
 
 ```swift
 mutating func append(data: T) {
@@ -279,7 +283,7 @@ mutating func append(data: T) {
 
 맨앞의 데이터를 삭제하기 위한 removeFirst() 메소드입니다.
 
-![스크린샷 2020-06-13 오후 8.51.44](/Users/hyeju/Library/Application Support/typora-user-images/스크린샷 2020-06-13 오후 8.51.44.png)
+<img width="643" alt="스크린샷 2020-06-13 오후 9 05 58" src="https://user-images.githubusercontent.com/34293225/84568380-179e6400-adba-11ea-863d-7bb2aa677184.png">
 
 ```swift
 mutating func removeFirst() {
@@ -299,7 +303,7 @@ mutating func removeFirst() {
 
 원하는 위치의 데이터를 삭제하기 위한 remove(at:) 메소드입니다.
 
-![스크린샷 2020-06-13 오후 8.56.32](/Users/hyeju/Library/Application Support/typora-user-images/스크린샷 2020-06-13 오후 8.56.32.png)
+<img width="643" alt="스크린샷 2020-06-13 오후 9 05 50" src="https://user-images.githubusercontent.com/34293225/84568379-166d3700-adba-11ea-96cf-48c2d6dfada2.png">
 
 ```swift
 mutating func remove(at index: Int) {
@@ -324,7 +328,9 @@ mutating func remove(at index: Int) {
 
 
 
-마지막 위치의 데이터를 삭제하기 위한 removeLast() 메소드입니다.![스크린샷 2020-06-13 오후 8.58.09](/Users/hyeju/Library/Application Support/typora-user-images/스크린샷 2020-06-13 오후 8.58.09.png)
+마지막 위치의 데이터를 삭제하기 위한 removeLast() 메소드입니다.
+
+<img width="643" alt="스크린샷 2020-06-13 오후 9 05 39" src="https://user-images.githubusercontent.com/34293225/84568378-14a37380-adba-11ea-8dd4-b09333dd8ce9.png">
 
 ```swift
 mutating func removeLast() {
