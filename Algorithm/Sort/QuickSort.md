@@ -13,3 +13,6 @@
 5. 피벗의 왼쪽과 오른쪽으로 나눠서 과정을 재귀적으로 반복해줍니다.
 6. 원소들의 크기가 0이되면 정렬을 멈춥니다.
 
+<img width="643" alt="스크린샷 2020-06-15 오후 8 47 57" src="https://user-images.githubusercontent.com/34293225/84655617-3b91af00-af4c-11ea-8ba7-732b7d687238.png">
+<img width="643" alt="스크린샷 2020-06-15 오후 8 48 03" src="https://user-images.githubusercontent.com/34293225/84655620-3cc2dc00-af4c-11ea-83ed-a6046c18f480.png">
+<img width="643" alt="스크린샷 2020-06-15 오후 8 48 14" src="https://user-images.githubusercontent.com/34293225/84655623-3d5b7280-af4c-11ea-9b06-e9ff26b954b9.png">
