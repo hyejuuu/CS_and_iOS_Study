@@ -20,6 +20,5 @@ kocw의 이화여자대학교 운영체제 강의를 듣고 복습하면서 정�
 [Sort](https://github.com/hyejuuu/CS_and_iOS_Study/tree/master/Algorithm/Sort) <br/>
 [Tree](https://github.com/hyejuuu/CS_and_iOS_Study/blob/master/Algorithm/Tree) <br/>
 [Priority Queue](https://github.com/hyejuuu/CS_and_iOS_Study/tree/master/Algorithm/PriorityQueue) <br/>
-[Binary Search](https://github.com/hyejuuu/CS_and_iOS_Study/blob/master/Algorithm/BinarySearch) <br/>
+[Binary Search & Binary Search](https://github.com/hyejuuu/CS_and_iOS_Study/blob/master/Algorithm/BinarySearch) <br/>
 [Graph](https://github.com/hyejuuu/CS_and_iOS_Study/blob/master/Algorithm/Graph) <br/>
-[Binary Search Tree]() <br/>
