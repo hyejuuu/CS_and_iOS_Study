@@ -12,7 +12,8 @@ AVL Tree는 균형 인수(Balance Factor)라는 개념을 사용합니다.
 
 만약에 -1보다 작거나 +1보다 큰 경우에는 트리를 상황에 맞게 다시 회전(Rotation) 시켜줘야 합니다. 
 
-
+<br/>
+<br/>
 
 ### AVL Tree의 회전(Rotation)
 
